@@ -6,18 +6,24 @@ import MovieCard from './MovieCard';
 import './App.css';
 
 import SearchIcon from './search.svg';
+
+
 //430765f3
-const API_URL ='http://www.omdbapi.com?apikey=430765f3';
+ 
 
-const movie1= {
 
-        "Title": "Spiderman and Grandma",
-        "Year": "2009",
-        "imdbID": "tt1433184",
-        "Type": "movie",
-        "Poster": "https://m.media-amazon.com/images/M/MV5BMjE3Mzg0MjAxMl5BMl5BanBnXkFtZTcwNjIyODg5Mg@@._V1_SX300.jpg"
+const API_URL ="http://www.omdbapi.com?apikey=430765f3";
+//"https://staging.getdirect.io/api/public/1694/properties -H "Authorization: Token your_api_key";
+
+//const movie1= {
+
+        //"Title": "Spiderman and Grandma",
+        //"Year": "2009",
+        //"imdbID": "tt1433184",
+        //"Type": "movie",
+       // "Poster": "https://m.media-amazon.com/images/M/MV5BMjE3Mzg0MjAxMl5BMl5BanBnXkFtZTcwNjIyODg5Mg@@._V1_SX300.jpg"
     
-}
+//}
 const App = () =>{
 
     const [movies, setMovies] = useState([]);
@@ -40,6 +46,7 @@ const App = () =>{
 
 
     return(
+        
        <div className='app'>
 
         <h1> MovieLand</h1>
